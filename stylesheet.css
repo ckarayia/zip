@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+/*ELEMENTS*/
+body {
+	background-image: url('img/png/zip-05.png');
+	background-size: 100% auto;
+	padding: 10%;
+	background-repeat: no-repeat;
+	background-color: white;
+	overflow-x: hidden;
+	cursor: url('img/png/mouse-09.png'), auto;
+	/*background-color: #c7ff2d;*/
+
+}
+
+h1 {
+	/*font-family: "Courier New", serif;*/
+	font-family: 'Work Sans', sans-serif;
+	font-size: 33px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 39px;
+	
+
+}
+
+mark {
+    background-color: white;
+    color: red;
+}
+
+a {
+	text-decoration: none;
+	color: red;
+}
+#mainwrapper {
+
+}
+
+#content {
+	padding: 10px 10px;
+}
+
+#welcomeContent {
+	text-align: center;
+
+}
+
+/*NAV*/ 
+
+#mainwrapper header nav {
+    text-align: right;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 2%;
+    width: 62%;
+    float: left;
+    color: rgba(146,146,146,1.00);
+}
+
+#mainwrapper header {
+/*	Header */
+	overflow: "auto";
+	font-family: "Courier New";
+	font-style: normal;
+	font-weight: 9pt;
+	padding-top:20px;
+	color: black;
+}
+
+#mainwrapper header #logo {
+/*	 Company Logo text */
+	width: 28%;
+	float: left;
+	padding-left: 2%;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: rgba(146,146,146,1.00);
+}
+
+
+
+
+/*CUSTOM CLASSES*/
+
+.italic {
+	font-family: 'Noto Sans', sans-serif, italic;
+	font-style: italic;
+}
+
+.subtextheader {
+	font-family: 'Noto Sans', sans-serif;
+	font-style: bold;
+	font-size: 9px;
+	
+}
+.subtext {
+	font-family: 'Noto Sans', sans-serif;
+	font-style: normal;
+	font-size: 9px;
+	
+}
+
+#logo {
+	padding: none;
+}
+
+#logo img {
+	width: 150px;
+}
+
+.imgwrap {
+	padding: 10px 30%;
+
+
+}
+
+.exwrap {
+	padding: 10px 50px;
+}
+
+.exwrap img {
+	width:100%;
+}
+
+nav a {
+    border: none;
+    border-bottom: 5px solid transparent;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+
+    }
+nav a:hover {
+	border-color: rgba(0,250,10,0.5);
+	font-style: italic;
+	font-weight: bold;
+}
+
+/*p { font-family: 'Noto Sans', sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 16.5px;*/
+
+
+}
+
+
+.imgwrap img {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+
+}
+
+.pubwrap img {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+img { 
+	margin: 0 auto;
+	display: block;
+
+}
+
+
+/* __   __ .____  .___   _     .   
+ |    |  /      /   `  |    /|   
+ |\  /|  |__.   |    | |   /  \  
+ | \/ |  |      |    | |  /---'\ 
+ /    /  /----/ /---/  /,'      \
+                                 
+   ___    .     . .____  .___  _ .____    _____
+ .'   `.  /     / /      /   \ | /       (     
+ |     |  |     | |__.   |__-' | |__.     `--. 
+ |  ,_ |  |     | |      |  \  | |           | 
+  `._.`-.  `._.'  /----/ /   \ / /----/ \___.' */
+
+
+                                               
+@media (min-width: 780px){
+#mainwrapper {
+
+	padding: 0px 100px; 
+/*	padding element takes numbers clockwise: top, right left bottom or 
+	two numbers that represent top-bottom left-right*/
+}
+
+#content {
+	max-width: 800px;
+	display: block;
+	margin: 0 auto;
+}
+
+.exwrap {
+	padding: 10px 100px;
+}
+
+.exwrap img {
+	width:40% !important;
+}
+
+
+
+}
+
+@media (min-width: 480px) {
+	#mainwrapper {
+
+	padding: 0px 50px; 
+/*	padding element takes numbers clockwise: top, right left bottom or 
+	two numbers that represent top-bottom left-right*/
+}
+
+.imgwrap img {
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+.exwrap {
+	padding: 10px 50px;
+}
+
+.exwrap img {
+	width:60%;
+}
+
+.pubwrap img {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+#mainwrapper header nav {
+/*	Nav bar containing links in header */
+	text-align: right;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-right: 2%;
+	width: 68%;
+	float: left;
+	color: rgba(146,146,146,1.00);
+}
+
+nav a {
+    border: none;
+    border-bottom: 5px solid transparent;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 0px;
+
+
+}
+}
+
+
+
+
