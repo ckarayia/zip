@@ -1,14 +1,98 @@
 @charset "UTF-8";
 
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Solide Mirage_Etroit';
+    src:    url('Etroit/Solide_Mirage-Etroit_web.eot');
+    src:    url('Etroit/Solide_Mirage-Etroit_web.eot?#iefix') format('embedded-opentype'),
+            url('Etroit/Solide_Mirage-Etroit_web.woff') format('woff'),
+            url('Etroit/Solide_Mirage-Etroit_web.woff2') format('woff2'),
+            url('Etroit/Solide_Mirage-Etroit_web.ttf') format('truetype'),
+            url('Etroit/Solide_Mirage-Etroit_web.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*@font-face {
+    font-family: 'Solide Mirage';
+    src:    url('Mono/Solide_Mirage-Mono_web.eot');
+    src:    url('Mono/Solide_Mirage-Mono_web.eot?#iefix') format('embedded-opentype'),
+            url('Mono/Solide_Mirage-Mono_web.woff') format('woff'),
+            url('Mono/Solide_Mirage-Mono_web.woff2') format('woff2'),
+            url('Mono/Solide_Mirage-Mono_web.ttf') format('truetype'),
+            url('Mono/Solide_Mirage-Mono_web.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+
+
+
+
+
 /*ELEMENTS*/
 body {
-	background-image: url('img/png/zip-05_2.jpg');
+/*	background-image: url('img/png/zip-05_2.jpg');
 	background-size: auto 90%;
 	background-position: center 20px;
 	padding: 10%;
 	background-repeat: no-repeat;
 	background-color: white;
-	overflow-x: hidden;
+	overflow-x: hidden;*/
+	font-family: 'Work Sans', sans-serif;
+	font-size: 18pt;
+	font-weight: 400;
 	/*cursor: url('img/png/mouse-09.png'), auto;*/
 	/*background-color: #c7ff2d;*/
 
@@ -16,12 +100,14 @@ body {
 
 h1 {
 	/*font-family: "Courier New", serif;*/
+	color: red;
 	font-family: 'Work Sans', sans-serif;
-	font-size: 33px;
+	font-size: 35pt;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 39px;
+	text-align: center;
 	
 
 }
@@ -37,19 +123,53 @@ a {
 
 }
 
+p {
+	margin-bottom: 21pt;
+	line-height: 24pt;
+}
 
-a:hover{
+
+#mainwrapper a:hover{
 
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 700;
 }
 
-font-family: 'Work Sans', sans-serif;
-	font-weight: 700;
+/*font-family: 'Work Sans', sans-serif;
+	font-weight: 700;*/
 
 
 #mainwrapper {
+	width: 80%;
+	margin: 0 auto;
 
+}
+
+#menuwrapper {
+	text-align: center;
+	margin: 100px auto;
+}
+
+#showwrapper {
+	text-align: center;
+}
+
+#showwrapper .artists {
+	text-align: left;
+	margin: 100px auto 0 auto;
+	width: 70%;
+	color: red;
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+
+#showwrapper .poster {
+	width: 80%;
+	margin-bottom: 150px;
+}
+
+#menuwrapper p{
+	margin-top: 100px;
 }
 
 #content {
@@ -61,36 +181,66 @@ font-family: 'Work Sans', sans-serif;
 
 }
 
+#home_container {
+	background: url('img/home_footer.svg') no-repeat center center;
+	background-size: contain;
+	padding: 20% 0;
+	width: 100%;
+}
+
+#home_container section {
+	width: 60%;
+	margin: 0 auto;
+	color: white;
+	background-color: rgba(255, 0, 0, 0.7);
+	padding: 8% 12%;
+}
+
+.version {
+	font-family: "Solide Mirage_Etroit", serif;
+	text-align: center;
+    background-color: red;
+    padding: 14px 0;
+    color: white;
+    display: block;
+    width: 300px;
+    margin: 80px auto 20px;
+}
+
+sub {
+	display: block;
+	font-weight: 200;
+	margin-bottom: 70px;
+	color: red;
+}
+
 /*NAV*/ 
 
-#mainwrapper header nav {
-    text-align: right;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 2%;
-    width: 62%;
-    float: left;
-    color: rgba(146,146,146,1.00);
+header {
+	position: fixed;
+	left: 0;
+	top: 5%;
+	z-index: 666;
 }
 
-#mainwrapper header {
-/*	Header */
-	overflow: "auto";
-	font-family: "Courier New";
-	font-style: normal;
-	font-weight: 9pt;
-	padding-top:20px;
-	color: black;
+header ul {
+	list-style-type: none;
+
+	font-size: 1.2em;
+	text-align: right;
+	font-weight: 100;
 }
 
-#mainwrapper header #logo {
-/*	 Company Logo text */
-	width: 28%;
-	float: left;
-	padding-left: 2%;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	color: rgba(146,146,146,1.00);
+header li {
+	background-color: red;
+	color: white;
+	padding: 10px 10px 10px 0px;
+	margin: 20px 0;
+	width: 150px;
+}
+
+header li:hover {
+	width: 170px;
 }
 
 
@@ -137,7 +287,7 @@ font-family: 'Work Sans', sans-serif;
 .exwrap img {
 	width:100%;
 }
-
+/*
 nav a {
     border: none;
     border-bottom: 5px solid transparent;
@@ -151,7 +301,7 @@ nav a:hover {
 	border-color: rgba(0,250,10,0.5);
 	font-style: italic;
 	font-weight: bold;
-}
+}*/
 
 /*p { font-family: 'Noto Sans', sans-serif;
 	font-size: 12px;
@@ -259,7 +409,7 @@ img {
 	color: rgba(146,146,146,1.00);
 }
 
-nav a {
+/*nav a {
     border: none;
     border-bottom: 5px solid transparent;
     display: inline-block;
@@ -268,9 +418,47 @@ nav a {
     margin-bottom: 0px;
 
 
+}*/
 }
+
+@media only screen and (max-width: 600px) {
+    #mainwrapper {
+        margin-top: 120px;
+        width: 95%;
+    }
+
+    body {
+    	font-size: 14pt;
+    }
+
+    p {
+    	line-height: 16pt;
+    }
+
+    h1 {
+    	font-size: 24pt;
+    }
+
+    header {
+    	top: 0;
+    	left: -5%;
+    	position: fixed;
+    	margin: 0 auto;
+    	transform-origin: center right;
+
+    	-webkit-transform: rotate(90deg);
+    	-moz-transform: rotate(90deg);
+    	-o-transform: rotate(90deg);
+    	-ms-transform: rotate(90deg);
+    	transform: rotate(90deg);
+    }
+
+    header li:hover {
+    	width: auto;
+    	/*margin: 0;*/
+    }
+    #home_container section {
+    	width: 70%;
+    	padding: 8% 8%;
+    }
 }
-
-
-
-
