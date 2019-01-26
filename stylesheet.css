@@ -129,16 +129,14 @@ p {
 	line-height: 20pt;
 }
 
-
+b {
+	font-weight: 700;
+}
 
 
 #mainwrapper a:hover{
 
 	font-family: 'Work Sans', sans-serif;
-	font-weight: 700;
-}
-
-b {
 	font-weight: 700;
 }
 
