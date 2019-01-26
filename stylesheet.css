@@ -91,7 +91,7 @@ body {
 	background-color: white;
 	overflow-x: hidden;*/
 	font-family: 'Work Sans', sans-serif;
-	font-size: 18pt;
+	font-size: 14pt;
 	font-weight: 400;
 	/*cursor: url('img/png/mouse-09.png'), auto;*/
 	/*background-color: #c7ff2d;*/
@@ -123,15 +123,22 @@ a {
 
 }
 
+
 p {
-	margin-bottom: 21pt;
-	line-height: 24pt;
+	margin-bottom: 15pt;
+	line-height: 20pt;
 }
+
+
 
 
 #mainwrapper a:hover{
 
 	font-family: 'Work Sans', sans-serif;
+	font-weight: 700;
+}
+
+b {
 	font-weight: 700;
 }
 
@@ -165,7 +172,7 @@ p {
 
 #showwrapper .poster {
 	width: 80%;
-	margin-bottom: 150px;
+	margin-bottom: 100px;
 }
 
 #menuwrapper p{
@@ -182,8 +189,8 @@ p {
 }
 
 #home_container {
-	background: url('img/home_footer.svg') no-repeat center center;
-	background-size: contain;
+/*	background: url('img/home_footer.svg') no-repeat center center;
+*/	background-size: contain;
 	padding: 20% 0;
 	width: 100%;
 }
@@ -192,9 +199,23 @@ p {
 	width: 60%;
 	margin: 0 auto;
 	color: white;
-	background-color: rgba(255, 0, 0, 0.7);
-	padding: 8% 12%;
+	background-color: rgba(255, 0, 0);
+	padding: 6% 10%;
 }
+
+#page3_container section {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 200;
+	width: 60%;
+	margin: 0 auto;
+	color: red;
+	padding: 6% 10%;
+	text-align: left;
+	font-size: 17px;
+
+
+}
+
 
 .version {
 	font-family: "Solide Mirage_Etroit", serif;
