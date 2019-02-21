@@ -188,7 +188,7 @@ b {
 #home_container {
 /*	background: url('img/home_footer.svg') no-repeat center center;
 */	background-size: contain;
-	padding: 20% 0;
+	padding: 0% 0;
 	width: 100%;
 }
 
@@ -198,6 +198,7 @@ b {
 	color: white;
 	background-color: rgba(255, 0, 0);
 	padding: 6% 10%;
+	font-size: calc(.5vw + .5vh + .5vmin);
 }
 
 #page3_container section {
