@@ -160,11 +160,11 @@ b {
 
 #showwrapper .artists {
 	text-align: left;
-	margin: 100px auto 0 auto;
-	width: 70%;
+	margin: 0 auto 0 auto;
+	width: 60%;
 	color: red;
-	font-size: 1.2em;
-	line-height: 1.2em;
+	font-size: .8em;
+	line-height: 1.4em;
 }
 
 #showwrapper .poster {
